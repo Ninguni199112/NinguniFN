@@ -52,6 +52,36 @@
       padding: 1rem;
       font-size: 0.9rem;
     }
+    .animated-image {
+      text-align: center;
+      margin: 2rem auto;
+      animation: float 3s ease-in-out infinite;
+    }
+    .animated-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+    .service-block {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .service-block img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .service-block div {
+      flex: 1;
+    }
   </style>
 </head>
 <body>
@@ -65,6 +95,10 @@
     </nav>
   </header>
 
+  <div class="animated-image">
+    <img src="https://i.pinimg.com/originals/83/d0/62/83d0624cb23265f59db12a80f64fda3b.gif" alt="Nguni Bull Fight Animation">
+  </div>
+
   <section class="section" id="about">
     <h2>About Us</h2>
     <p>
@@ -75,11 +109,27 @@
 
   <section class="section" id="services">
     <h2>Our Services</h2>
-    <ul>
-      <li><strong>Investments:</strong> Guided strategies for personal and corporate portfolios.</li>
-      <li><strong>Trading:</strong> Forex, commodities, and indices with real-time analysis.</li>
-      <li><strong>Tax:</strong> Reliable, up-to-date compliance and planning for all client types.</li>
-    </ul>
+    <div class="service-block">
+      <img src="https://cdn.pixabay.com/photo/2015/12/08/00/32/stock-1080529_960_720.jpg" alt="Investment">
+      <div>
+        <h3>Investments</h3>
+        <p>Guided strategies for personal and corporate portfolios tailored to secure long-term wealth and financial sustainability.</p>
+      </div>
+    </div>
+    <div class="service-block">
+      <img src="https://cdn.pixabay.com/photo/2016/11/29/04/17/chart-1866225_960_720.jpg" alt="Trading">
+      <div>
+        <h3>Trading</h3>
+        <p>Specializing in forex, commodities, and indices, our trading services offer real-time analysis and culturally aware decision-making frameworks.</p>
+      </div>
+    </div>
+    <div class="service-block">
+      <img src="https://cdn.pixabay.com/photo/2018/05/08/08/37/taxes-3381858_960_720.jpg" alt="Tax">
+      <div>
+        <h3>Tax</h3>
+        <p>Reliable, up-to-date tax compliance and strategic planning services suited for individuals, SMEs, and large enterprises alike.</p>
+      </div>
+    </div>
   </section>
 
   <section class="section" id="contact">
